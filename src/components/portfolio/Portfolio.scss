@@ -1,0 +1,110 @@
+@import "../../App.scss";
+.portfolio
+{
+    position: relative;
+    h1
+    {
+        font-weight: 1000;
+        @include mobile
+        {
+            font-size: 1.5rem;
+        }
+    }
+.progress
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+    color: orange;
+    font-size: 36px;
+.progressBar
+{
+    height: 10px;
+    background-color: #fff;
+    @include mobile
+    {
+        margin-top:10px;
+    }
+}
+
+}
+
+.container
+{
+    /* background-color: #fff; */
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       margin-right: 50px;
+@include mobile{
+        flex-direction: column;
+        gap:200px
+    }
+    img{
+        flex:1;
+        height: 370px;
+        max-width: 600px;
+        margin-top: 50px;
+        border: 6px solid goldenrod;
+        border-radius: 20px;
+          transform: translateX(-50px); /* Moves image 20px to the left */
+          @include mobile
+          {
+              margin-top: 130px;
+                   height: 200px;
+        max-width: 350px;
+        margin-left: 100px;
+          }
+
+    }
+    .textContainer
+    {
+        flex: 1;
+        /* background-color: red; */
+        text-align: center;
+        /* margin-top: 50px; */
+        max-width: 300px;
+        transform: translateX(-20px);
+        margin-bottom: 80px;
+        @include mobile{
+            margin-bottom: -100px;
+        }
+    }
+
+    h2
+    {
+        font-size: 2rem;
+        font-weight: 1000;
+        /* background-color: #fff; */
+        /* width: 600px; */
+        text-align: left;
+        white-space: nowrap;
+        padding-bottom: 5px;
+        @include mobile
+        {
+          white-space: wrap;
+        }
+    }
+    button
+    {
+        background-color: orange;
+        width: 200px;
+        height: 2rem;
+        margin-top: 12px;
+        color: #0c0c1d;
+        margin-right: 200px;
+        border-radius: 8px;
+        cursor: pointer;
+        
+    }
+p{
+     text-align: left;
+}
+
+}
+}

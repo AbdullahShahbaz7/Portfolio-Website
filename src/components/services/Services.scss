@@ -1,0 +1,172 @@
+@import "../../App.scss";
+.services
+{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include mobile {
+        height: 197vh;
+        text-wrap: wrap;
+        scroll-behavior: smooth;
+    }
+    
+img
+{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    /* Place image without any distortion in quality,size
+    according to desired aspect ratio */
+    object-fit: cover;
+
+}
+
+
+.textContainer
+{
+    /* flex: 2 means the element will take up 2x more space than one with flex: 1  */
+flex: 1;
+align-self: flex-end;
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+p
+{
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    text-align: left;
+    margin-right: 5px;
+    padding: 5px;
+    @include mobile {
+margin-right: 0px;
+  font-size: 14px;
+  margin-top: -30px;
+    }
+
+}
+
+.titleContainer
+{
+    /* flex: 2 means the element will take up 2x more space than one with flex: 1  */
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.listContainer
+{
+    /* flex: 2 means the element will take up 2x more space than one with flex: 1  */
+    flex: 3;
+    display: flex;
+    max-width: 1000px;
+    margin: 20px;
+    margin-left: 100px;
+
+    @include mobile {
+        flex-direction: column;
+        margin-left: 12px;
+        margin-top: 20px;
+        gap:20px
+    }
+    h2
+    {
+        font-size: 20px;
+        padding: 2px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+                @include mobile{
+                    margin-top: -20px;
+                    padding: 20px;
+                    font-size: 1.5rem;
+                    margin-left: -17px;
+  
+        }
+    }
+    p{
+        font-size: 15px;
+        padding: 4px;
+        width: 210px;
+
+    }
+
+#btns2
+{
+    background-color: orange;
+    border: none;
+    width: 90px;
+    color:  #0c0c1d;
+    width: 200px;
+    cursor: pointer;
+}
+}
+
+.box
+{
+    padding: 30px;
+    border: 0.5px solid gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.title
+{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    @include mobile
+    {
+        gap: 0px;
+    }
+
+}
+
+
+.h1s
+{
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    @include mobile {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
+
+.bolds
+{
+    font-weight: 1000;
+}
+
+
+#btns
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: orange;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #0c0c1d;
+     cursor: pointer;
+     @include mobile
+     {
+        margin-right: 10px;
+     }
+}
+
+
+}
+
