@@ -31,21 +31,9 @@ src/
 └── main.jsx
 ```
 
-## 🚀 Quick Start
-```bash
-git clone <repo>
-npm install
-npm run dev
-```
-
-## 🔧 Customize
-- Update text in component files  
-- Replace images in `assets/`  
-- Add projects in `portfolio` component  
-- Edit styles in `.scss` files  
 
 ## 📱 Responsive
-Desktop • Tablet • Mobile (sidebar menu)
+• Desktop • Mobile (sidebar menu)
 
 ## 🌐 Deploy
 Ready for Netlify – connect GitHub repo and deploy.
